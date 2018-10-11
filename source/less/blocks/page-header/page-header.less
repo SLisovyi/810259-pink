@@ -1,0 +1,39 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  background-color: rgba(12,16,21, 0.3);
+}
+
+.page-header--menu-open {
+  background-color: #283645;
+}
+
+.page-header__logo {
+  display: block;
+  background: red;
+  width: 78px;
+  margin: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    width: 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    width: auto;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 940px;
+    margin: 0 auto;
+  }
+}

@@ -2,62 +2,74 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Pink</title>
   </head>
   <body>
 
-    <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-image" src="http://placehold.it/150x80" alt="Pink" width="" height="">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <header class="page-header page-header--menu-open">
+      <div class="wrapper">
+        <a class="page-header__logo" href="">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
+        </a>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
 
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
 
       <h1 class="visually-hidden">Мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
 
+      <div class="downloads__background"></div>
+
       <section class="downloads">
 
         <h2 class="visually-hidden">Скачать приложение</h2>
 
-        <button class="downloads__button" type="button">
-          Скачать приложение
-        </button>
+        <div class="downloads-wrapper">
 
-        <ul class="downloads__list os-list">
-          <li class="os-list__item">
-            <img class="os-list__image" src="http://placehold.it/47x47" alt="Apple" width="" height="">
-          </li>
+          <b class="downloads__slogan">Взгляните на жизнь иначе!</b>
 
-          <li class="os-list__item">
-            <img class="os-list__image" src="http://placehold.it/47x47" alt="Android" width="" height="">
-          </li>
+          <button class="downloads__button" type="button">
+            Скачать приложение
+          </button>
 
-          <li class="os-list__item">
-            <img class="os-list__image" src="http://placehold.it/47x47" alt="Windows" width="" height="">
-          </li>
-        </ul>
+          <ul class="downloads__list os-list">
+            <li class="os-list__item">
+              <img class="os-list__image" src="img/logo-apple.svg" alt="Apple" width="47" height="56">
+            </li>
 
-        <p class="downloads__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <li class="os-list__item">
+              <img class="os-list__image" src="img/logo-android.svg" alt="Android" width="43" height="47">
+            </li>
+
+            <li class="os-list__item">
+              <img class="os-list__image" src="img/logo-microsoft.svg" alt="Windows" width="44" height="41">
+            </li>
+          </ul>
+
+          <p class="downloads__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
 
       </section>
 
@@ -95,6 +107,29 @@
       </section>
 
     </main>
+
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+    var navFill = document.querySelector('.page-header');
+
+    navMain.classList.remove('main-nav--nojs');
+    navMain.classList.add('main-nav--closed');
+    navFill.classList.remove('page-header--menu-open');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--open');
+        navFill.classList.add('page-header--menu-open');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--open');
+        navFill.classList.remove('page-header--menu-open');
+      }
+    });
+  </script>
   </body>
 
 </html>
