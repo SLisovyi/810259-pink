@@ -19,16 +19,16 @@
 
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a>Главная</a>
+                <a class="site-list__link">Главная</a>
               </li>
               <li class="site-list__item">
-                <a href="photo.html">Фотографии</a>
+                <a class="site-list__link" href="photo.html">Фотографии</a>
               </li>
               <li class="site-list__item">
-                <a href="form.html">Конкурс</a>
+                <a class="site-list__link" href="form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
 
@@ -56,15 +56,21 @@
 
           <ul class="downloads__list os-list">
             <li class="os-list__item">
-              <img class="os-list__image" src="img/logo-apple.svg" alt="Apple" width="47" height="56">
+              <a href="#">
+                <img class="os-list__image" src="img/logo-apple.svg" alt="Apple" width="47" height="56">
+              </a>
             </li>
 
             <li class="os-list__item">
-              <img class="os-list__image" src="img/logo-android.svg" alt="Android" width="43" height="47">
+              <a href="#">
+                <img class="os-list__image" src="img/logo-android.svg" alt="Android" width="43" height="47">
+              </a>
             </li>
 
             <li class="os-list__item">
-              <img class="os-list__image" src="img/logo-microsoft.svg" alt="Windows" width="44" height="41">
+              <a href="#">
+                <img class="os-list__image" src="img/logo-microsoft.svg" alt="Windows" width="44" height="41">
+              </a>
             </li>
           </ul>
 
@@ -87,49 +93,92 @@
 
         <h2 class="visually-hidden">Преимущества</h2>
 
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="advantages-wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-1-desktop@1x.png" alt="Всем привет" width="292" height="302">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-2-desktop@1x.png" alt="Всем привет" width="292" height="302">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-3-desktop@1x.png" alt="Всем привет" width="292" height="302">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <div class="advantages__image-wrapper">
 
-        <img class="advantages__image" src="http://placehold.it/157x320" alt="Всем привет" width="" height="">
+              <img class="advantages__image advantages__image--mobile" src="img/iphone-screen-mobile@1x.png" alt="Всем привет" width="157" height="320">
+              <img class="advantages__image advantages__image--tablet" src="img/iphone-screen-3-tablet@1x.png" alt="Всем привет" width="268" height="481">
+
+
+          </div>
+        </div>
+
+        <div class="advantages__timer timer-desktop">
+
+            <div class="timer-desktop__image">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="298px" height="345.097px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+                <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+              </svg>
+            </div>
+
+            <div class="timer-desktop__explanation">
+              <h3 class="timer-desktop__title">Эффект на 24 часа!</h3>
+              <p class="timer-desktop__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <a href="" class="timer-desktop__link">Узнать больше об исследовании</a>
+            </div>
+        </div>
 
       </section>
 
+      <section class="reviews">
+        <div class="reviews__slider-controls">
+          <i class="reviews__controls-button reviews__controls-button--active"></i>
+          <i class="reviews__controls-button"></i>
+          <i class="reviews__controls-button"></i>
+        </div>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <h3 class="reviews__name">Николай Петров</h3>
+            <p class="reviews__age-job">25 лет, водитель трамвая</p>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+        </ul>
+      </section>
+      <section class="pricelist">
+        <table class="pricelist__table">
+          <tr>
+            <th>База</th>
+            <th>Стандарт</th>
+            <th>Анлим</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+          </tr>
+
+        </table>
+      </section>
+
     </main>
-
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    var navFill = document.querySelector('.page-header');
-
-    navMain.classList.remove('main-nav--nojs');
-    navMain.classList.add('main-nav--closed');
-    navFill.classList.remove('page-header--menu-open');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--open');
-        navFill.classList.add('page-header--menu-open');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--open');
-        navFill.classList.remove('page-header--menu-open');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
   </body>
 
 </html>
