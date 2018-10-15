@@ -1,0 +1,64 @@
+@media (min-width: @mobile-width) {
+  .timer-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width),
+  (min-width: @tablet-width) {
+  .timer-desktop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  .timer-desktop__image {
+    margin-right: 60px;
+  }
+
+  .timer-desktop__explanation {
+    margin-top: 50px;
+  }
+
+  .timer-desktop__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .timer-desktop__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .timer-desktop__link {
+    font-size: 18px;
+    line-height: 30px;
+    color: #d22856;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .timer-desktop {
+    margin: 0 -20px;
+    margin-top: 50px;
+
+    padding: 0 20px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .timer-desktop {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    background-color: #f2f2f2;
+  }
+}

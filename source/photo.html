@@ -2,49 +2,53 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
 
-    <header class="page-header">
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-image" src="http://placehold.it/150x80" alt="Pink" width="" height="">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <header class="page-header page-header--menu-open">
+      <div class="wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
+        </a>
+        <nav class="main-nav main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link"  href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link"  href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a  class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
 
-      </nav>
+          </nav>
+        </div>
     </header>
 
     <main class="page-main page-photo">
-      <h1>Фотографии пользователей</h1>
-
+      <div class="main-page-header__wrapper">
+        <h1 class="main-page-header__title">Фотографии пользователей</h1>
+      </div>
       <section class="users-photo">
-        <h2>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+        <h2 class="users-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
 
         <ul class="users-photo__list">
           <li class="users-photo__item users-photo__item--panorama">
 
-            <div class="users-photo__panorama--tag">
-              <p>Панорама дня</p>
-            </div>
+              <p class="users-photo__panorama-tag">Панорама дня</p>
 
-            <img class="users-photo__image" src="http://placehold.it/280x180" alt="Прыгать или нет?" width="" height="">
+            <img class="users-photo__image users-photo__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Прыгать или нет?" width="320" height="137">
 
             <b class="users-photo__name">Анна</b>
             <span class="users-photo__time">(5 минут назад)</span>
@@ -57,7 +61,7 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="http://placehold.it/280x180" alt="Вчера он на луну летал, сегодня в руки к нам попал." width="" height="">
+            <img class="users-photo__image" src="img/photo-car-mobile@1x.jpg" alt="Вчера он на луну летал, сегодня в руки к нам попал." width="280" height="180">
 
             <b class="users-photo__name">Левон</b>
             <span class="users-photo__time">(5 часов назад)</span>
@@ -70,7 +74,7 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="http://placehold.it/280x180" alt="Соседи будут рады!" width="" height="">
+            <img class="users-photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Соседи будут рады!" width="280" height="180">
 
             <b class="users-photo__name">Антон</b>
             <span class="users-photo__time">(12 часов назад)</span>
@@ -83,7 +87,7 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="http://placehold.it/280x180" alt="Здесь могла быть ваша цитата о высоком и вечном." width="" height="">
+            <img class="users-photo__image" src="img/photo-window-mobile@1x.jpg" alt="Здесь могла быть ваша цитата о высоком и вечном." width="280" height="180">
 
             <b class="users-photo__name">Борис</b>
             <span class="users-photo__time">(20 часов назад)</span>
@@ -96,7 +100,7 @@
 
           <li class="photo__item">
 
-            <img class="users-photo__image" src="http://placehold.it/280x180" alt="Самая кубанская в мире!" width="" height="">
+            <img class="users-photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Самая кубанская в мире!" width="280" height="180">
 
             <b class="users-photo__name">Сергей</b>
             <span class="users-photo__time">(25 часов назад)</span>
@@ -109,7 +113,7 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="http://placehold.it/280x180" alt="Где снег-то?" width="" height="">
+            <img class="users-photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Где снег-то?" width="280" height="180">
 
             <b class="users-photo__name">Максим</b>
             <span class="users-photo__time">(40 часов назад)</span>
@@ -122,7 +126,7 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="http://placehold.it/280x180" alt="Всем GM и взаимные лайки!" width="" height="">
+            <img class="users-photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Всем GM и взаимные лайки!" width="280" height="180">
 
             <b class="users-photo__name">Надежда</b>
             <span class="users-photo__time">(45 часов назад)</span>
@@ -142,7 +146,7 @@
 
       <div class="page-footer__logo logo">
         <a href="index.html" class="logo__link">
-          <img class="logo__image" src="http://placehold.it/147x40" alt="Всем GM и взаимные лайки!" width="147" height="40">
+          <img class="logo__image" src="img/logo-pink-blue-mobile.svg" alt="Всем GM и взаимные лайки!" width="147" height="40">
         </a>
       </div>
 
@@ -161,14 +165,14 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__name">Разработано:</b>
+        <b class="copyright__name">Разработано</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="http://placehold.it/27x34" alt="HTML Academy" width="" height="">
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" alt="HTML Academy" width="" height="">
         </a>
 
       </div>
 
     </footer>
-
+  <script src="js/script.js"></script>
   </body>
 </html>
