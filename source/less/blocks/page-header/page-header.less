@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
 
+  margin: auto;
+  min-height: 66px;
+
   position: relative;
   background-color: rgba(12, 16, 21, 0.3);
+  z-index: 10;
 }
 
 .page-header--menu-open {
@@ -17,13 +21,23 @@
   margin: 20px;
 }
 
+.wrapper {
+    margin: auto 0;
+  }
+
 @media (min-width: @tablet-width) {
+  .page-header {
+    min-height: 110px;
+  }
   .page-header__logo {
     width: 150px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    min-height: 110px;
+  }
   .page-header__logo {
     width: auto;
   }
@@ -34,6 +48,6 @@
     align-items: center;
 
     width: 940px;
-    margin: 0 auto;
+    margin: auto;
   }
 }
