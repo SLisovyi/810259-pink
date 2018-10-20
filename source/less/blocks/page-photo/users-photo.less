@@ -44,11 +44,7 @@
 }
 
 .users-photo__item {
-  margin-bottom: 20px;
-
   background-color: #f2f2f2;
-
-  flex-grow: 1;
 }
 
 .users-photo__name {
@@ -88,21 +84,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .users-photo__image {
-    border: 1px solid;
-  }
-
   .users-photo__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -20px;
-
-    border: 1px dotted;
+    justify-content: space-between;
   }
 
   .users-photo__item {
     width: 300px;
-    margin-right: 20px;
 
     margin-bottom: 20px;
   }
