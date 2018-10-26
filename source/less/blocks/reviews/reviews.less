@@ -1,14 +1,22 @@
 .reviews {
   position: relative;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 
   padding: 0 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .reviews__slider-controls {
-  display: none;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
 }
 
 .reviews__controls-button {
@@ -46,7 +54,7 @@
   font-weight: 700;
   color: #000000;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .reviews__text {
@@ -73,22 +81,99 @@
   }
 
   .reviews__slider-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    position: absolute;
+    bottom: 44px;
     left: 50%;
-    bottom: 10px;
-
-    margin-left: -32px;
-
-    width: 64px;
-    height: 12px;
   }
 
   .reviews__name {
     font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  .reviews__age-job {
+    font-size: 14px;
+    line-height: 30px;
+
+    display: inline;
+    margin-bottom: 60px;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    margin-bottom: 35px;
+
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    padding: 0 130px;
+  }
+
+  .reviews__slider-controls {
+    display: none;
+  }
+
+  .reviews__slider-controls-desktop {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    right: 0;
+    top: 155px;
+    width: 100%;
+  }
+
+  .reviews__controls-button-desktop {
+    width: 22px;
+    height: 41px;
+
+    opacity: 0.3;
+  }
+
+  .button__previous {
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  .button__next {
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  .reviews__list {
+    position: relative;
+
+    padding: 0 125px;
+    padding-top: 127px;
+
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      margin-left: -40px;
+
+      width: 80px;
+      height: 64px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+
+      opacity: 0.3;
+    }
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__name {
+    font-size: 24px;
     margin-bottom: 1px;
   }
 
@@ -102,8 +187,6 @@
 
   .reviews__text {
     font-size: 18px;
-    margin-bottom: 10px;
-
-    order: -1;
+    margin-bottom: 36px;
   }
 }

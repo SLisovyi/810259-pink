@@ -1,63 +1,96 @@
 @media (min-width: @mobile-width) {
-  .timer-desktop {
+  .timer {
     display: none;
   }
 }
 
-@media (min-width: @desktop-width),
-  (min-width: @tablet-width) {
-  .timer-desktop {
+@media (min-width: @tablet-width) {
+  .timer {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+
+    margin-top: 25px;
+    background-color: #ffffff;
   }
 
-  .timer-desktop__image {
-    margin-right: 60px;
+  .timer__image {
+    margin-right: 70px;
   }
 
-  .timer-desktop__explanation {
-    margin-top: 50px;
+  .timer__image svg {
+    width: 238px;
   }
 
-  .timer-desktop__title {
+  .timer__explanation {
+    margin-top: 70px;
+  }
+
+  .timer__title {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 36px;
     font-weight: 700;
 
+    width: 170px;
+
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 
-  .timer-desktop__description {
-    font-size: 18px;
-    line-height: 30px;
+  .timer__description {
+    font-size: 14px;
+    line-height: 24px;
     color: #283645;
+    font-weight: 400;
 
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
-  .timer-desktop__link {
-    font-size: 18px;
-    line-height: 30px;
+  .timer__link {
+    font-size: 14px;
+    line-height: 24px;
     color: #d22856;
-  }
-}
 
-@media (min-width: @tablet-width) {
-  .timer-desktop {
-    margin-top: 50px;
-
-    padding: 0 20px;
-    background-color: #ffffff;
+    font-weight: 400;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .timer-desktop {
+  .timer {
     margin-bottom: 60px;
+    margin-top: 0;
     padding-bottom: 60px;
     background-color: #f2f2f2;
+  }
+
+  .timer__image {
+    margin-right: 68px;
+  }
+
+  .timer__image svg {
+    width: 298px;
+  }
+
+  .timer__explanation {
+    margin-top: 39px;
+  }
+
+  .timer__title {
+    margin-top: 50px;
+    margin-bottom: 21px;
+
+    width: 570px;
+  }
+
+  .timer__description {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .timer__link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

@@ -1,12 +1,12 @@
 .advantages {
-  margin-bottom: 80px;
+  margin-bottom: 44px;
 
   padding: 0 20px;
-  padding-top: 100px;
+  padding-top: 76px;
 
 
   background-image: url("../img/shape_2.png");
-  background-position: top;
+  background-position: 0 -76px;
   background-repeat: no-repeat;
 }
 
@@ -21,13 +21,13 @@
 .advantages__item {
   text-align: center;
 
-  margin-bottom: 49px;
+  margin-bottom: 31px;
 }
 
 .advantages__title {
   padding: 0;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   font-size: 18px;
   line-height: 24px;
@@ -45,6 +45,10 @@
   font-weight: 400;
 }
 
+.advantages__image-wrapper {
+  padding-top: 10px;
+}
+
 .advantages__image {
   display: block;
   margin: 0 auto;
@@ -57,6 +61,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    margin-bottom: 60px;
+
+    padding-top: 5px;
+
+    background-position: 0 -20px;
+    background-size: 1200px 517px;
+  }
+
   .advantages-wrapper {
     display: flex;
     align-items: stretch;
@@ -73,7 +86,7 @@
 
   .advantages__item {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 
     &:last-child {
       margin-bottom: 0;
@@ -82,17 +95,26 @@
 
   .advantages__image {
     margin: 0;
-    margin-right: 30px;
-    margin-bottom: -77px;
+    margin-right: 47px;
+    margin-bottom: 0;
+
+    width: 268px;
+    height: 481px;
   }
 
-  .advantages__image--mobile,
   .advantages__image--desktop {
     display: none;
   }
 
   .advantages__image--tablet {
     display: block;
+  }
+
+  .advantages__timer {
+    margin-top: 0;
+
+    width: 238px;
+    height: 276px;
   }
 }
 
@@ -103,14 +125,16 @@
   }
 
   .advantages-wrapper {
-    max-width: 100%;
+    max-width: 934px;
+    margin-bottom: 10px;
   }
 
   .advantages__list {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 100%;
+    width: 935px;
+    padding-top: 40px;
   }
 
   .advantages__item {
@@ -144,6 +168,16 @@
 
   .advantages__image {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
+
+
+    width: auto;
+    height: auto;
+  }
+
+  .advantages__title,
+  .advantages__description {
+    width: 240px;
+    margin-bottom: 24px;
   }
 }

@@ -14,6 +14,10 @@
 .users-photo__item--panorama {
   position: relative;
   background-color: #f2f2f2;
+
+  margin-bottom: 20px;
+
+  padding-bottom: 10px;
 }
 
 .users-photo__panorama-tag {
@@ -27,24 +31,35 @@
   text-transform: uppercase;
 
   margin: 0;
-  padding: 5px 15px;
+  padding: 5px 20px;
   background-color: #d22856;
+}
+
+.users-photo__item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  background-color: #f2f2f2;
 }
 
 .users-photo__image {
   display: block;
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .users-photo__image--panorama {
   max-width: none;
   margin: 0 -20px;
+  margin-bottom: 18px;
+
+
   background-color: #f2f2f2;
 }
 
-.users-photo__item {
-  background-color: #f2f2f2;
+.users-photo__name-time {
+
+  margin: 0;
 }
 
 .users-photo__name {
@@ -53,7 +68,7 @@
   font-weight: 700;
   color: #283645;
 
-  margin-left: 15px;
+  margin-left: 17px;
 }
 
 .users-photo__time {
@@ -70,7 +85,9 @@
   line-height: 24px;
   font-weight: 400;
   color: #283645;
-  margin-left: 15px;
+  margin: 0;
+  margin-left: 17px;
+  margin-bottom: 10px;
 }
 
 .users-photo__reviews {
@@ -78,7 +95,9 @@
   line-height: 24px;
   font-weight: 400;
   color: #d22856;
-  margin-left: 15px;
+  margin: 0;
+  margin-left: 17px;
+  margin-bottom: 10px;
 
   text-transform: uppercase;
 }
@@ -90,22 +109,50 @@
     justify-content: space-between;
   }
 
+  .users-photo__item--panorama {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .users-photo__panorama-tag {
+    margin-top: 58px;
+  }
+
+  .users-photo__image {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 23px;
+  }
+
+  .users-photo__image--panorama {
+    width: 660px;
+    height: 510px;
+
+    margin-bottom: 23px;
+  }
+
+  .users-photo__reviews--panorama {
+    position: absolute;
+    right: 59px;
+    bottom: 63px;
+  }
+
   .users-photo__item {
     width: 300px;
 
     margin-bottom: 20px;
+
+    padding-bottom: 10px;
   }
 
-  .users-photo__name {
-    margin-left: 30px;
+  .users-photo__name,
+  .users-photo__description,
+  .users-photo__reviews {
+    margin-left: 28px;
   }
 
   .users-photo__description {
-    margin-left: 30px;
-  }
-
-  .users-photo__reviews {
-    margin-left: 30px;
+    margin-bottom: 15px;
   }
 }
 
@@ -114,12 +161,51 @@
     padding: 0 130px;
   }
 
-  .users-photo__image--panorama {
-    max-width: none;
-    margin: 0 -130px;
+  .users-photo__item {
+    min-height: 545px;
+
+    margin-bottom: 55px;
   }
 
-  .users-photo__item {
+  .users-photo__item--panorama {
+    position: relative;
     margin-bottom: 50px;
+  }
+
+  .users-photo__panorama-tag {
+    margin-top: 55px;
+    margin-right: 0;
+  }
+
+  .users-photo__image {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 23px;
+  }
+
+  .users-photo__image--panorama {
+    width: 1200px;
+    height: 506px;
+
+    max-width: none;
+    margin: 0 -130px;
+
+    margin-bottom: 23px;
+  }
+
+  .users-photo__reviews--panorama {
+    position: absolute;
+    right: 62px;
+    bottom: 38px;
+  }
+
+  .users-photo__name,
+  .users-photo__description,
+  .users-photo__reviews {
+    margin-left: 28px;
+  }
+
+  .users-photo__description {
+    margin-bottom: 14px;
   }
 }

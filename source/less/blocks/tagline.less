@@ -1,7 +1,7 @@
 .tagline {
   padding: 0 20px;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  padding-top: 40px;
+  margin-bottom: 35px;
   text-align: center;
 }
 
@@ -14,12 +14,13 @@
 }
 
 .tagline__title--top {
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 @media (min-width: @tablet-width) {
   .tagline__title--top {
     margin-bottom: 0;
+    margin-top: 6px;
   }
 
   .tagline__title--bottom {
@@ -30,11 +31,15 @@
 
   .tagline__title {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 49px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
+  .tagline {
+    padding-top: 62px;
+  }
+
   .tagline__title--bottom {
     width: 450px;
   }
