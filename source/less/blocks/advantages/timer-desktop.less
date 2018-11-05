@@ -6,6 +6,10 @@
 
 @media (min-width: @tablet-width) {
   .timer {
+    display: block;
+  }
+
+  .timer__wrapper {
     display: flex;
     justify-content: space-between;
 
@@ -56,15 +60,20 @@
 }
 
 @media (min-width: @desktop-width) {
-  .timer {
+  .timer__wrapper {
+    width: 940px;
+
+    margin: 0 auto;
     margin-bottom: 60px;
     margin-top: 0;
+
+    padding: 0;
     padding-bottom: 60px;
     background-color: #f2f2f2;
   }
 
   .timer__image {
-    margin-right: 68px;
+    margin-right: 60px;
   }
 
   .timer__image svg {
