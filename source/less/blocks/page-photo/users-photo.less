@@ -10,7 +10,6 @@
   .reset-list();
 }
 
-
 .users-photo__item--panorama {
   position: relative;
   background-color: #f2f2f2;
@@ -36,6 +35,13 @@
 }
 
 .users-photo__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+
+
   margin-bottom: 20px;
   padding-bottom: 10px;
 
@@ -90,14 +96,27 @@
   margin-bottom: 10px;
 }
 
-.users-photo__reviews {
+.gallery__description-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.gallery__likes-block {
+  display: flex;
+  align-items: center;
+
+  margin: 0 20px;
+  margin-top: auto;
+}
+
+.gallery__post-likes {
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
   color: #d22856;
   margin: 0;
-  margin-left: 17px;
-  margin-bottom: 10px;
 
   text-transform: uppercase;
 }
@@ -133,36 +152,56 @@
 
   .users-photo__reviews--panorama {
     position: absolute;
-    right: 59px;
-    bottom: 63px;
+    right: 0;
+    bottom: 73px;
   }
 
   .users-photo__item {
     width: 300px;
+    min-height: 455px;
 
     margin-bottom: 20px;
 
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
 
   .users-photo__name,
   .users-photo__description,
   .users-photo__reviews {
+    margin: 0;
     margin-left: 28px;
+    margin-right: 20px;
   }
 
   .users-photo__description {
     margin-bottom: 15px;
   }
+
+  .gallery__likes-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 28px;
+    margin-top: auto;
+  }
+
+  .gallery__likes-button {
+    order: 2;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .users-photo {
-    padding: 0 130px;
+    padding: 0;
+  }
+
+  .users-photo__wrapper {
+    padding: 0 10px;
   }
 
   .users-photo__item {
-    min-height: 545px;
+    min-height: 555px;
 
     margin-bottom: 55px;
   }
@@ -173,30 +212,31 @@
   }
 
   .users-photo__panorama-tag {
-    margin-top: 55px;
-    margin-right: 0;
+    top: -2px;
+    right: 0;
   }
 
   .users-photo__image {
-    width: 300px;
+    width: 100%;
     height: 400px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
   }
 
   .users-photo__image--panorama {
-    width: 1200px;
+    width: 100%;
     height: 506px;
 
     max-width: none;
-    margin: 0 -130px;
 
     margin-bottom: 23px;
   }
 
   .users-photo__reviews--panorama {
     position: absolute;
-    right: 62px;
-    bottom: 38px;
+    right: 0;
+    bottom: 47px;
+
+    min-width: 150px;
   }
 
   .users-photo__name,

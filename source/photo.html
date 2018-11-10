@@ -8,9 +8,9 @@
   </head>
   <body>
 
-    <header class="page-header page-header--menu-open">
+    <header class="page-header">
       <section class="main-nav">
-        <div class="main-naw__wrapper">
+        <div class="main-nav__wrapper">
 
           <nav class="main-nav__container main-nav--nojs">
 
@@ -52,36 +52,46 @@
       <section class="users-photo">
         <h2 class="users-photo__title page-main__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
 
+      <div class="users-photo__wrapper">
 
         <div class="users-photo__item--panorama">
 
           <p class="users-photo__panorama-tag">Панорама дня</p>
 
-          <img class="users-photo__image users-photo__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Прыгать или нет?" width="320" height="137">
-          <div class="users-photo__name-time">
-            <b class="users-photo__name">Анна</b>
-            <span class="users-photo__time">(5 минут назад)</span>
-          </div>
-          <p class="users-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
+          <img class="users-photo__image users-photo__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Прыгать или нет?">
 
-          <p class="users-photo__reviews users-photo__reviews--panorama">Нравится: 215</p>
+          <div class="panorama-description__wrapper">
+            <div class="users-photo__name-time">
+              <p class="users-photo__name">Анна <span class="users-photo__time">(5 минут назад)</span></p>
+            </div>
+            <p class="users-photo__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои</p>
+
+            <div class="gallery__likes-block  users-photo__reviews--panorama">
+              <button class="gallery__likes-button" type="button">like</button>
+              <p class="gallery__post-likes">Нравится: 215</p>
+            </div>
+
+          </div>
 
         </div>
 
         <ul class="users-photo__list">
 
-
-
           <li class="users-photo__item">
 
             <img class="users-photo__image" src="img/photo-car-mobile@1x.jpg" alt="Вчера он на луну летал, сегодня в руки к нам попал." width="280" height="180">
 
-            <b class="users-photo__name">Левон</b>
-            <span class="users-photo__time">(5 часов назад)</span>
+            <div class="gallery__description-block">
+              <p class="users-photo__name">Левон <span class="users-photo__time">(5 часов назад)</span></p>
 
-            <p class="users-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
 
-            <p class="users-photo__reviews">Нравится: 356</p>
+              <p class="users-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </div>
+
+            <div class="gallery__likes-block">
+              <button class="gallery__likes-button" type="button">like</button>
+              <p class="gallery__post-likes">Нравится: 356</p>
+            </div>
 
           </li>
 
@@ -89,12 +99,17 @@
 
             <img class="users-photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Соседи будут рады!" width="280" height="180">
 
-            <b class="users-photo__name">Антон</b>
-            <span class="users-photo__time">(12 часов назад)</span>
+            <div class="gallery__description-block">
+              <p class="users-photo__name">Антон <span class="users-photo__time">(12 часов назад)</span></p>
 
-            <p class="users-photo__description">Соседи будут рады!</p>
 
-            <p class="users-photo__reviews">Нравится: 666</p>
+              <p class="users-photo__description">Соседи будут рады!</p>
+            </div>
+
+            <div class="gallery__likes-block">
+              <button class="gallery__likes-button" type="button">like</button>
+              <p class="gallery__post-likes">Нравится: 666</p>
+            </div>
 
           </li>
 
@@ -102,12 +117,16 @@
 
             <img class="users-photo__image" src="img/photo-window-mobile@1x.jpg" alt="Здесь могла быть ваша цитата о высоком и вечном." width="280" height="180">
 
-            <b class="users-photo__name">Борис</b>
-            <span class="users-photo__time">(20 часов назад)</span>
+            <div class="gallery__description-block">
+              <p class="users-photo__name">Борис <span class="users-photo__time">(20 часов назад)</span></p>
 
-            <p class="users-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="users-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </div>
 
-            <p class="users-photo__reviews">Нравится: 215</p>
+            <div class="gallery__likes-block">
+              <button class="gallery__likes-button" type="button">like</button>
+              <p class="gallery__post-likes">Нравится: 215</p>
+            </div>
 
           </li>
 
@@ -115,12 +134,17 @@
 
             <img class="users-photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Самая кубанская в мире!" width="280" height="180">
 
-            <b class="users-photo__name">Сергей</b>
-            <span class="users-photo__time">(25 часов назад)</span>
+            <div class="gallery__description-block">
+              <p class="users-photo__name">Сергей <span class="users-photo__time">(25 часов назад)</span></p>
 
-            <p class="users-photo__description">Самая кубанская в мире!</p>
 
-            <p class="users-photo__reviews">Нравится: 4</p>
+              <p class="users-photo__description">Самая кубанская в мире!</p>
+            </div>
+
+            <div class="gallery__likes-block">
+              <button class="gallery__likes-button" type="button">like</button>
+              <p class="gallery__post-likes">Нравится: 4</p>
+            </div>
 
           </li>
 
@@ -128,12 +152,17 @@
 
             <img class="users-photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Где снег-то?" width="280" height="180">
 
-            <b class="users-photo__name">Максим</b>
-            <span class="users-photo__time">(40 часов назад)</span>
+            <div class="gallery__description-block">
+              <p class="users-photo__name">Максим <span class="users-photo__time">(40 часов назад)</span></p>
 
-            <p class="users-photo__description">Где снег-то?</p>
 
-            <p class="users-photo__reviews">Нравится: 150</p>
+              <p class="users-photo__description">Где снег-то?</p>
+            </div>
+
+            <div class="gallery__likes-block">
+              <button class="gallery__likes-button" type="button">like</button>
+              <p class="gallery__post-likes">Нравится: 150</p>
+            </div>
 
           </li>
 
@@ -141,15 +170,21 @@
 
             <img class="users-photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Всем GM и взаимные лайки!" width="280" height="180">
 
-            <b class="users-photo__name">Надежда</b>
-            <span class="users-photo__time">(45 часов назад)</span>
+            <div class="gallery__description-block">
+              <p class="users-photo__name">Надежда <span class="users-photo__time">(45 часов назад)</span></p>
 
-            <p class="users-photo__description">Всем GM и взаимные лайки!</p>
+              <p class="users-photo__description">Всем GM и взаимные лайки!</p>
+            </div>
 
-            <p class="users-photo__reviews">Нравится: 2560</p>
+            <div class="gallery__likes-block">
+              <button class="gallery__likes-button" type="button">like</button>
+              <p class="gallery__post-likes">Нравится: 2560</p>
+            </div>
 
           </li>
         </ul>
+
+      </div>
 
       </section>
 
