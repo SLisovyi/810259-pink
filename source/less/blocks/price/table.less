@@ -1,0 +1,169 @@
+.price {
+  margin-bottom: 100px;
+
+  background-color: #f2f2f2;
+}
+
+.price__table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.table__title {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+
+  margin: 0;
+
+  padding: 15px 50px;
+  background-color: #283645;
+
+  border-right: 2px solid #ffffff;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.price__value {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #ffffff;
+
+  margin: 0;
+  margin-top: 10px;
+}
+
+.table__name {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
+
+  padding: 15px 40px;
+  background-color: #ffffff;
+
+  border: 2px solid #e5e5e5;
+}
+
+.yes-no__value {
+  text-align: center;
+
+  vertical-align: middle;
+}
+
+.rate__display-none {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+
+  margin-right: 20px;
+}
+
+@media (min-width: @mobile-width),
+  (max-width: @mobile-width) {
+  .table__wrapper {
+    padding-top: 85px;
+    padding-bottom: 46px;
+    margin: 0 auto;
+    width: 320px;
+    overflow: hidden;
+  }
+
+  .price__table {
+    position: relative;
+    left: -373px;
+
+    width: 840px;
+  }
+
+  .table__title {
+    font-size: 18px;
+    line-height: 30px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .table__wrapper {
+    width: 620px;
+    margin: 0 auto;
+
+    padding-top: 91px;
+  }
+
+  .price__table {
+    position: static;
+
+    width: 100%;
+  }
+
+  .table__title {
+    font-size: 16px;
+    line-height: 30px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+    padding: 10px 25px;
+  }
+
+  .price__value {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .table__name {
+    font-size: 14px;
+    line-height: 30px;
+
+    font-weight: 400;
+
+    padding: 13px 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+  }
+
+  .rate__display-none {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .table__wrapper {
+    width: 940px;
+
+    padding-top: 135px;
+  }
+
+  .table__title {
+    font-size: 18px;
+
+    padding: 16px 45px;
+  }
+
+  .price__value {
+    font-size: 24px;
+
+    margin-top: 8px;
+    padding-bottom: 10px;
+  }
+
+  .table__name {
+    font-size: 18px;
+
+    padding: 13px 22px;
+  }
+}
