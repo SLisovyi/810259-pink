@@ -58,7 +58,13 @@
 
           <p class="users-photo__panorama-tag">Панорама дня</p>
 
-          <img class="users-photo__image users-photo__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Прыгать или нет?">
+<!--          <img class="users-photo__image users-photo__image--panorama" src="img/panorama-mobile@1x.jpg" alt="Прыгать или нет?">-->
+            <picture class="users-photo__image users-photo__image--panorama">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Прыгать или нет?">
+            </picture>
+
 
           <div class="panorama-description__wrapper">
             <div class="users-photo__name-time">
@@ -79,7 +85,12 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="img/photo-car-mobile@1x.jpg" alt="Вчера он на луну летал, сегодня в руки к нам попал." width="280" height="180">
+<!--            <img class="users-photo__image" src="img/photo-car-mobile@1x.jpg" alt="Вчера он на луну летал, сегодня в руки к нам попал." width="280" height="180">-->
+            <picture  class="users-photo__image">
+              <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Вчера он на луну летал, сегодня в руки к нам попал.">
+            </picture>
 
             <div class="gallery__description-block">
               <p class="users-photo__name">Левон <span class="users-photo__time">(5 часов назад)</span></p>
@@ -97,7 +108,12 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Соседи будут рады!" width="280" height="180">
+<!--            <img class="users-photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="Соседи будут рады!" width="280" height="180">-->
+            <picture  class="users-photo__image">
+              <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Соседи будут рады!">
+            </picture>
 
             <div class="gallery__description-block">
               <p class="users-photo__name">Антон <span class="users-photo__time">(12 часов назад)</span></p>
@@ -115,7 +131,12 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="img/photo-window-mobile@1x.jpg" alt="Здесь могла быть ваша цитата о высоком и вечном." width="280" height="180">
+<!--            <img class="users-photo__image" src="img/photo-window-mobile@1x.jpg" alt="Здесь могла быть ваша цитата о высоком и вечном." width="280" height="180">-->
+            <picture  class="users-photo__image">
+              <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Здесь могла быть ваша цитата о высоком и вечном.">
+            </picture>
 
             <div class="gallery__description-block">
               <p class="users-photo__name">Борис <span class="users-photo__time">(20 часов назад)</span></p>
@@ -132,7 +153,12 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Самая кубанская в мире!" width="280" height="180">
+<!--            <img class="users-photo__image" src="img/photo-fair-mobile@1x.jpg" alt="Самая кубанская в мире!" width="280" height="180">-->
+            <picture  class="users-photo__image">
+              <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Самая кубанская в мире!">
+            </picture>
 
             <div class="gallery__description-block">
               <p class="users-photo__name">Сергей <span class="users-photo__time">(25 часов назад)</span></p>
@@ -150,7 +176,12 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Где снег-то?" width="280" height="180">
+<!--            <img class="users-photo__image" src="img/photo-pov-mobile@1x.jpg" alt="Где снег-то?" width="280" height="180">-->
+            <picture  class="users-photo__image">
+              <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x,">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Где снег-то?">
+            </picture>
 
             <div class="gallery__description-block">
               <p class="users-photo__name">Максим <span class="users-photo__time">(40 часов назад)</span></p>
@@ -168,7 +199,12 @@
 
           <li class="users-photo__item">
 
-            <img class="users-photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Всем GM и взаимные лайки!" width="280" height="180">
+<!--            <img class="users-photo__image" src="img/photo-wing-mobile@1x.jpg" alt="Всем GM и взаимные лайки!" width="280" height="180">-->
+            <picture  class="users-photo__image">
+              <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Где снег-то?">
+            </picture>
 
             <div class="gallery__description-block">
               <p class="users-photo__name">Надежда <span class="users-photo__time">(45 часов назад)</span></p>

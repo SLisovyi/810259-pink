@@ -17,7 +17,13 @@
 
             <div class="main-nav__wrapper-menu">
               <a class="main-nav__logo" aria-label="Pink">
-                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="22">
+
+              <picture class="page-header__logo-image">
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-tablet.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-desktop.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Pink">
+              </picture>
+
               </a>
             </div>
 
@@ -43,10 +49,12 @@
 
         <div class="page-header__download download">
           <h2 class="visually-hidden">Скачивание приложения Пинк</h2>
+<!--
           <div class="download__image-wrapper">
 
-            <img class="page-header__download-image" src="img/iphone-hand-mobile@1x.png" alt="Pink" width="258" height="286">
+            <img class="page-header__download-image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Pink" width="258" height="286">
           </div>
+-->
 
           <div class="download__wrapper">
             <p class="download__slogan">Взгляните на жизнь иначе!</p>
@@ -121,27 +129,36 @@
 
         <div class="advantages-wrapper">
           <ul class="advantages__list">
-            <li class="advantages__item">
-              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-1-desktop@1x.png" alt="Всем привет" width="292" height="302">
+            <li class="advantages__item advantages__item--1">
+<!--              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Всем привет" width="292" height="302">-->
+
+
               <h3 class="advantages__title">Поднимает настроение</h3>
               <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
-            <li class="advantages__item">
-              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-2-desktop@1x.png" alt="Всем привет" width="292" height="302">
+            <li class="advantages__item advantages__item--2">
+<!--              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Всем привет" width="292" height="302">-->
               <h3 class="advantages__title">Меняет мир вокруг</h3>
               <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
-            <li class="advantages__item">
-              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-3-desktop@1x.png" alt="Всем привет" width="292" height="302">
+            <li class="advantages__item advantages__item--3">
+<!--              <img class="advantages__image advantages__image--desktop" src="img/iphone-screen-3-desktop@1x.png"  srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Всем привет" width="292" height="302">-->
               <h3 class="advantages__title">Заводит новых друзей</h3>
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+<!--
           <div class="advantages__image-wrapper">
 
               <img class="advantages__image advantages__image--mobile" src="img/iphone-screen-mobile@1x.png" alt="Всем привет" width="157" height="320">
+            <picture class="advantages__image advantages__image--mobile">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.jpg 1x, img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="advantages__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Всем привет">
+            </picture>
+
 
           </div>
+-->
         </div>
 
         <div class="timer">
